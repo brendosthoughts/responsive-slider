@@ -20,7 +20,11 @@ $('document').ready(function(){
             },  
             "html"  
         );  
-		$(this).children('.extra_info').modal();
+		$(this).children('.extra_info').dialog({
+		height:600,
+		width: 800,
+		modal: true
+		});
 	});
 
 });

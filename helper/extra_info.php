@@ -1,6 +1,6 @@
 <?php 
 $content_id = $_GET['content_id'];
-$ajax_msg ='<a href="play_video.php"' . $content_id . '><img class="vid_img" src ="helper/images/'. $content_id. '.jpg"/></a>
+$ajax_msg =' <a href="play_video.php"' . $content_id . '><img class="vid_img" src ="helper/images/'. $content_id. '.jpg"/></a><h3 class="vid_title"> This would be the title for: '. $content_id   .'</h3>
 						<div class="heading">
 							<span class="type">Types: <a href="type.php?type=Talks.php">Talks </a></span> 
 							<span class="tags"><br><br>Tags: <a href="type.php?type=Talks.php">Science</a><a href="type.php?type=Talks.php">Fuck of this works</a></span> 
