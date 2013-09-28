@@ -13,7 +13,7 @@
 	display:block;
 	height:126px;
 	width:64px;
-	background-image:url('../images/previous.png');
+	background-image:url('../helper/images/previous.png');
 	float:left;
 	margin:0;
 	padding:0;
@@ -29,7 +29,7 @@ position: absolute;
 	display:block;
 	height:126px;
 	width:64px;
-	background-image:url('../images/next.png');
+	background-image:url('../helper/images/next.png');
 	float:right;
 	margin:0;
 	padding:0;

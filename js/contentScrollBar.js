@@ -7,8 +7,18 @@
  * http://www.gnu.org/licenses/gpl.html
  *
  */
+ var ajax_load = "<img class='loading' src='../helper/images/load.gif' alt='loading...' />";
 $('document').ready(function(){
 	$('.content_holder').click(function() {
+	$(this).children("extra_info").html(ajax_load);  
+        $.get(  
+            "helper/get_extra_info.html",  
+            {},  
+            function(responseText){  
+                $("#extra_info").html(responseText);  
+            },  
+            "html"  
+        );  
 		$(this).children('.extra_info').dialog({
 		height:600,
 		width: 800,
