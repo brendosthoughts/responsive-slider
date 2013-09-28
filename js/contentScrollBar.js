@@ -7,15 +7,16 @@
  * http://www.gnu.org/licenses/gpl.html
  *
  */
- var ajax_load = "<img class='loading' src='../helper/images/load.gif' alt='loading...' />";
+ var ajax_load = "<img class='loading' src='helper/images/load.gif' alt='loading...' />";
 $('document').ready(function(){
 	$('.content_holder').click(function() {
-	$(this).children("extra_info").html(ajax_load);  
+	var content_id= $(this).attr('id');
+	$(this).children(".extra_info").html(ajax_load);  
         $.get(  
-            "helper/get_extra_info.html",  
+            "helper/extra_info.php?content_id=" +content_id ,  
             {},  
             function(responseText){  
-                $("#extra_info").html(responseText);  
+                $(".extra_info").html(responseText);  
             },  
             "html"  
         );  
