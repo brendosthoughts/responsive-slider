@@ -20,7 +20,7 @@ $('document').ready(function(){
             },  
             "html"  
         );  
-		$(this).children('.extra_info').modal();
+		$(this).children('.extra_info').modal({close:true , overlayClose:true});
 	});
 
 });
