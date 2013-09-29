@@ -1,11 +1,21 @@
 /*
- * jQuery liquid carousel v1.0
- * http://www.nikolakis.net
+ * jQuery responsive-slider v1.0
+ * http://www.wiser-development.com
  *
- * Copyright 2010, John Nikolakis
+ * Copyright 2013, Brendan Morrison
  * Free to use under the GPL license.
  * http://www.gnu.org/licenses/gpl.html
  *
+ * A special thanks goes out to John Nikolakis
+ * from http://www.nikolakis.net
+ * who's liquis carousel Jquery plugin this work was derived from
+ * 
+ * Also a special thanks to Eric Martin 
+ * from http://www.ericmmartin.com/
+ * who's simple modal Jquery Plugin is also spun into this work
+ * 
+ *     Please Check out these guy's work and Support however you can 
+ *                 Also hack and Enjoy
  */
  var ajax_load = "<img class='loading' src='helper/images/load.gif' alt='loading...' />";
 $('document').ready(function(){
@@ -13,7 +23,7 @@ $('document').ready(function(){
 	var content_id= $(this).attr('id');
 	$(this).children(".extra_info").html(ajax_load);  
         $.get(  
-            "helper/extra_info.php?content_id=" +content_id ,  
+            "extra_video_info.php?content_id=" +content_id ,  
             {},  
             function(responseText){  
                 $(".extra_info").html(responseText);  
